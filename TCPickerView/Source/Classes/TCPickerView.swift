@@ -65,8 +65,13 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
     open var mainColor: UIColor = UIColor(red: 75/255, green: 178/255,
         blue: 218/255, alpha: 1) {
         didSet {
-            self.doneButton?.backgroundColor = self.mainColor
             self.titleLabel?.backgroundColor = self.mainColor
+        }
+    }
+    open var doneColor: UIColor = UIColor(red: 75/255, green: 178/255,
+                                          blue: 218/255, alpha: 1) {
+        didSet {
+            self.doneButton?.backgroundColor = self.mainColor
         }
     }
     open var closeButtonColor: UIColor = UIColor(red: 198/255,
@@ -231,7 +236,7 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
         self.containerView?.backgroundColor = UIColor.white
         self.containerView?.layer.borderColor = grayColor.cgColor
         self.containerView?.layer.borderWidth = 0.5
-        self.containerView?.layer.cornerRadius = 15.0
+        self.containerView?.layer.cornerRadius = 5.0
         self.containerView?.clipsToBounds = true
         self.titleLabel?.text = "Select"
         self.doneButton?.setTitle("Done", for: .normal)
