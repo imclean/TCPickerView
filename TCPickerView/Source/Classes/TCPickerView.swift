@@ -251,7 +251,7 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
         self.mainColor = UIColor(red: 75/255, green: 178/255,
             blue: 218/255, alpha: 1)
         self.doneColor = UIColor(red: 75/255, green: 178/255,
-                                 blue: 218/255, alpha: 1),
+                                 blue: 218/255, alpha: 1)
         self.titleFont = UIFont(name: "Helvetica-Bold", size: 15.0)
         self.buttonFont = UIFont(name: "Helvetica", size: 15.0)
         self.tableView?.separatorInset = UIEdgeInsets(
