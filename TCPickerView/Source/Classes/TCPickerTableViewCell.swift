@@ -85,7 +85,7 @@ class TCPickerTableViewCell: UITableViewCell {
         
         self.addConstraint(NSLayoutConstraint(item: titleLabel,
             attribute: .leading, relatedBy: .equal, toItem: self,
-            attribute: .leading, multiplier: 1.0, constant: 10))
+            attribute: .leading, multiplier: 1.0, constant: 12))
         self.addConstraint(NSLayoutConstraint(item: titleLabel,
             attribute: .top, relatedBy: .equal, toItem: self,
             attribute: .top, multiplier: 1.0, constant: 0))

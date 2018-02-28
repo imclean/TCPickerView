@@ -71,7 +71,7 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
     open var doneColor: UIColor = UIColor(red: 75/255, green: 178/255,
                                           blue: 218/255, alpha: 1) {
         didSet {
-            self.doneButton?.backgroundColor = self.mainColor
+            self.doneButton?.backgroundColor = self.doneColor
         }
     }
     open var closeButtonColor: UIColor = UIColor(red: 198/255,
@@ -250,6 +250,8 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
         self.closeButtonColor = grayColor
         self.mainColor = UIColor(red: 75/255, green: 178/255,
             blue: 218/255, alpha: 1)
+        self.doneColor = UIColor(red: 75/255, green: 178/255,
+                                 blue: 218/255, alpha: 1),
         self.titleFont = UIFont(name: "Helvetica-Bold", size: 15.0)
         self.buttonFont = UIFont(name: "Helvetica", size: 15.0)
         self.tableView?.separatorInset = UIEdgeInsets(
