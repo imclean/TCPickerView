@@ -298,10 +298,11 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
         UIView.animate(withDuration: 0.7, delay: 0.0,
             usingSpringWithDamping: 1, initialSpringVelocity: 1.0,
             options: .allowAnimatedContent, animations: {
-            self.containerView?.center = CGPoint(x: self.center.x,
-            y: self.center.y + self.frame.size.height)
+                self.alpha = 0
+                self.containerView?.center = CGPoint(x: self.center.x, y: self.center.y + self.frame.size.height)
         }) { (isFinished) in
             self.removeFromSuperview()
+            self.alpha = 1.0
         }
     }
     
