@@ -159,7 +159,7 @@ open class TCPickerView: UIView, UITableViewDataSource, UITableViewDelegate {
             let tableView = self.tableView else {
                 return
         }
-        
+        self.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.3)
         self.addSubview(containerView)
         containerView.addSubview(doneButton)
         containerView.addSubview(closeButton)
